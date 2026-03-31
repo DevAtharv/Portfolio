@@ -4,79 +4,27 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Dr. Sweta Agarwal | Academic Portfolio</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script id="tailwind-config">
+  <script>
     tailwind.config = {
-      darkMode: "class",
       theme: {
         extend: {
-          colors: {
-            "surface-variant": "#e5e2e1",
-            outline: "#747878",
-            "tertiary-fixed-dim": "#c6c6c7",
-            "on-tertiary-fixed-variant": "#454747",
-            "on-tertiary": "#ffffff",
-            "on-primary-fixed-variant": "#454747",
-            error: "#ba1a1a",
-            primary: "#5d5f5f",
-            "primary-container": "#ffffff",
-            tertiary: "#5d5f5f",
-            secondary: "#5e5e5e",
-            "primary-fixed": "#e2e2e2",
-            "error-container": "#ffdad6",
-            "outline-variant": "#c4c7c8",
-            "on-secondary-fixed-variant": "#474747",
-            "on-error": "#ffffff",
-            "primary-fixed-dim": "#c6c6c7",
-            "surface-tint": "#5d5f5f",
-            background: "#fcf8f8",
-            "on-error-container": "#93000a",
-            "on-secondary-fixed": "#1b1c1c",
-            "surface-bright": "#fcf8f8",
-            "surface-container-high": "#ebe7e7",
-            "on-secondary-container": "#646464",
-            "secondary-container": "#e4e2e2",
-            "surface-container-low": "#f6f3f2",
-            "inverse-on-surface": "#f4f0ef",
-            "inverse-primary": "#c6c6c7",
-            "surface-container-highest": "#e5e2e1",
-            "on-surface": "#1c1b1b",
-            "tertiary-fixed": "#e2e2e2",
-            "on-background": "#1c1b1b",
-            "tertiary-container": "#ffffff",
-            "on-tertiary-container": "#747676",
-            "surface-container": "#f1edec",
-            "surface-container-lowest": "#ffffff",
-            "on-surface-variant": "#444748",
-            "on-primary-container": "#747676",
-            "inverse-surface": "#313030",
-            "surface-dim": "#ddd9d9",
-            surface: "#fcf8f8",
-            "secondary-fixed": "#e4e2e2",
-            "secondary-fixed-dim": "#c8c6c6",
-            "on-tertiary-fixed": "#1a1c1c",
-            "on-secondary": "#ffffff",
-            "on-primary": "#ffffff",
-            "on-primary-fixed": "#1a1c1c",
-            "secondary-dim": "#7999ff",
-            "tertiary-dim": "#e190f0",
-            "primary-dim": "#0073e1",
-            "error-dim": "#d7383b"
-          },
           fontFamily: {
-            headline: ["Inter", "sans-serif"],
-            body: ["Inter", "sans-serif"],
-            label: ["Inter", "sans-serif"],
-            display: ["Inter", "sans-serif"],
-            "noto-serif": ["Noto Serif", "serif"]
+            sans: ["Heebo", "sans-serif"],
+            serif: ["Merriweather", "serif"]
           },
-          borderRadius: {
-            DEFAULT: "0.25rem",
-            lg: "0.5rem",
-            xl: "0.75rem",
-            full: "9999px"
+          colors: {
+            ink: "#1f2748",
+            coral: "#ff6b63",
+            mist: "#edf7fa",
+            muted: "#5f6785",
+            line: "#e3e8f2",
+            chip: "#1f3a77"
+          },
+          boxShadow: {
+            card: "0 18px 35px rgba(24, 38, 70, 0.08)"
           }
         }
       }
@@ -86,318 +34,173 @@
     .material-symbols-outlined {
       font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
     }
-
-    .academic-gradient {
-      background: linear-gradient(135deg, #000e27 0%, #00234e 100%);
-    }
   </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
-  <header class="sticky top-0 z-50 bg-[#fafaf3]/80 backdrop-blur-md">
-    <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 md:px-8 md:py-6">
-      <div class="pr-4 font-noto-serif text-lg font-bold italic text-[#000e27] sm:text-xl">Dr. Sweta Agarwal</div>
-      <div class="hidden items-center gap-8 font-noto-serif text-lg tracking-tight md:flex">
-        <a class="text-[#1b1c18] transition-colors duration-300 hover:text-[#a88642]" href="#about">About</a>
-        <a class="text-[#1b1c18] transition-colors duration-300 hover:text-[#a88642]" href="#experience">Experience</a>
-        <a class="text-[#1b1c18] transition-colors duration-300 hover:text-[#a88642]" href="#expertise">Expertise</a>
-        <a class="text-[#1b1c18] transition-colors duration-300 hover:text-[#a88642]" href="#education">Education</a>
-        <a class="text-[#1b1c18] transition-colors duration-300 hover:text-[#a88642]" href="#contact">Contact</a>
+<body class="bg-white font-sans text-ink selection:bg-coral selection:text-white">
+  <header class="border-b border-white/60">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-6 sm:px-8">
+      <a class="font-serif text-2xl font-bold text-ink" href="#top">Sweta.</a>
+      <div class="hidden items-center gap-10 text-lg font-medium text-ink md:flex">
+        <a class="transition hover:text-coral" href="#highlights">Highlights</a>
+        <a class="transition hover:text-coral" href="#experience">Experience</a>
+        <a class="transition hover:text-coral" href="#contact">Contact</a>
       </div>
-      <button class="rounded-md bg-primary px-4 py-2 text-sm font-medium text-on-primary transition-all active:opacity-70 hover:bg-[#4d4f4f] sm:px-6 sm:text-base" type="button">
-        Download CV
+      <button class="flex items-center justify-center md:hidden" type="button" aria-label="Menu">
+        <span class="material-symbols-outlined text-4xl text-ink">menu</span>
       </button>
     </nav>
   </header>
 
-  <main>
-    <section class="relative mx-auto flex min-h-[760px] max-w-7xl items-center overflow-hidden px-4 pt-10 sm:px-6 md:min-h-[921px] md:px-8 md:pt-16">
-      <div class="grid items-center gap-10 md:grid-cols-12 md:gap-12">
-        <div class="z-10 md:col-span-7">
-          <span class="mb-4 inline-block text-sm uppercase tracking-widest text-on-tertiary-container">Subject Matter Expert</span>
-          <h1 class="mb-6 font-headline text-4xl font-bold leading-tight text-primary sm:text-5xl md:text-7xl">
-            Dr. Sweta Agarwal
-          </h1>
-          <p class="mb-8 max-w-xl text-lg leading-relaxed text-secondary sm:text-xl md:mb-10 md:text-2xl">
-            Dedicated Commerce Educator bridging the gap between academic theory and real-world application. Transitioning expertise into digital and remote learning environments.
-          </p>
-          <div class="flex flex-wrap gap-4">
-            <a class="rounded-md bg-primary px-6 py-3 text-base font-semibold text-on-primary transition-all hover:bg-[#4d4f4f] sm:px-8 sm:py-4 sm:text-lg" href="#contact">
-              Work with me
-            </a>
-            <a class="border-b-2 border-on-tertiary-container px-2 py-3 text-base font-semibold text-on-tertiary-container transition-all hover:text-primary sm:py-4 sm:text-lg" href="#expertise">
-              View Expertise
-            </a>
-          </div>
+  <main id="top">
+    <section class="mx-auto grid max-w-6xl items-center gap-14 px-5 py-14 sm:px-8 md:grid-cols-[1.1fr_0.9fr] md:py-24">
+      <div class="order-2 md:order-1">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-muted">Commerce Educator</p>
+        <h1 class="max-w-2xl text-4xl font-extrabold leading-tight text-ink sm:text-5xl md:text-6xl">
+          Hi, I am Dr. Sweta, helping students build strong academic foundations.
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">
+          With 11+ years of teaching experience, I specialize in Business Studies and Economics, making learning simple, structured, and meaningful through concept clarity, practical examples, and student-centered guidance.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a class="rounded bg-coral px-7 py-4 text-lg font-bold text-white transition hover:bg-[#ff5b53]" href="./resume.pdf" download>Download Resume</a>
+          <a class="rounded border border-line px-7 py-4 text-lg font-bold text-ink transition hover:border-coral hover:text-coral" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
         </div>
-        <div class="relative md:col-span-5">
-          <div class="aspect-[4/5] overflow-hidden rounded-lg bg-surface-container-high shadow-2xl transition-transform duration-700 hover:rotate-0 md:rotate-3">
-            <img
-              alt="Dr. Sweta Agarwal"
-              class="h-full w-full object-cover grayscale-[30%] contrast-[1.1]"
-              src="./1000115996-ezremove.png"
-            />
-          </div>
-          <div class="absolute -bottom-6 -left-6 hidden -rotate-6 rounded-lg bg-tertiary-fixed-dim p-8 shadow-xl md:block">
-            <p class="font-headline text-2xl italic text-on-tertiary-fixed-variant">11+ Years of Academic Excellence</p>
-          </div>
+      </div>
+      <div class="order-1 flex justify-center md:order-2">
+        <div class="flex h-[230px] w-[230px] items-center justify-center rounded-full bg-mist sm:h-[300px] sm:w-[300px]">
+          <img alt="Dr. Sweta Agarwal portrait" class="h-[200px] w-[200px] rounded-full object-cover sm:h-[260px] sm:w-[260px]" src="./1000115996-ezremove.png" />
         </div>
       </div>
     </section>
 
-    <section class="bg-surface-container-low py-20 md:py-24" id="about">
-      <div class="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 md:grid-cols-2 md:gap-20 md:px-8">
-        <div class="space-y-8">
-          <span class="font-label text-sm uppercase tracking-widest text-on-tertiary-container">The Narrative</span>
-          <h2 class="font-headline text-4xl font-bold text-primary">Academic Authority &amp; Artistic Grace</h2>
-          <p class="text-lg leading-relaxed text-secondary">
-            Holding a PhD from Bundelkhand University, my teaching philosophy is rooted in the belief that education should be as clear as it is impactful. I specialize in distilling complex economic structures into digestible, applicable knowledge for the next generation of business leaders.
-          </p>
-          <p class="text-lg leading-relaxed text-secondary">
-            Beyond the classroom, my discipline is shaped by the rigorous training of Kathak, holding a 6-year Prabhakar degree. This blend of structured commerce and expressive art allows for a unique, rhythmic approach to lecturing and mentorship.
-          </p>
+    <section class="bg-mist" id="highlights">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16">
+        <div class="mb-8 flex items-center justify-between gap-4">
+          <h2 class="text-3xl font-bold text-ink">Recent highlights</h2>
+          <a class="text-base font-medium text-[#1da1d6] hover:underline" href="#experience">View all</a>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="space-y-4 rounded-lg bg-surface-container-lowest p-8">
-            <span class="material-symbols-outlined text-4xl text-on-tertiary-container">school</span>
-            <h3 class="font-headline text-xl font-bold">PhD Holder</h3>
-            <p class="text-sm text-secondary">Bundelkhand University Graduate with a focus on Commerce &amp; Finance.</p>
-          </div>
-          <div class="space-y-4 rounded-lg bg-surface-container-lowest p-8">
-            <span class="material-symbols-outlined text-4xl text-on-tertiary-container">theater_comedy</span>
-            <h3 class="font-headline text-xl font-bold">Kathak Artist</h3>
-            <p class="text-sm text-secondary">6-Year Prabhakar degree recipient, bringing discipline and culture to pedagogy.</p>
-          </div>
-          <div class="col-span-2 rounded-lg bg-primary p-10 text-on-primary academic-gradient">
-            <p class="mb-4 font-headline text-2xl italic">"Clarity is the bridge between knowledge and transformation."</p>
-            <p class="font-label text-sm opacity-70">- Teaching Philosophy</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-surface py-20 md:py-24" id="experience">
-      <div class="mx-auto max-w-5xl px-4 sm:px-6 md:px-8">
-        <div class="mb-16 text-center">
-          <span class="font-label text-sm uppercase tracking-widest text-on-tertiary-container">Professional Journey</span>
-          <h2 class="mt-4 font-headline text-4xl font-bold text-primary">A Decade of Impact</h2>
-        </div>
-        <div class="relative ml-4 space-y-16 border-l-2 border-surface-container-high md:ml-0">
-          <div class="relative pl-12">
-            <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-on-tertiary-container ring-8 ring-background"></div>
-            <div class="rounded-lg border-b-2 border-transparent bg-surface-container-lowest p-10 transition-all hover:border-on-tertiary-container hover:bg-surface-container-high">
-              <div class="mb-6 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <div>
-                  <h3 class="font-headline text-2xl font-bold text-primary">Senior Commerce Educator &amp; Resource Person</h3>
-                  <p class="font-medium text-on-tertiary-container">Brij Kunwar Devi Aldrich Public School, Orai</p>
-                </div>
-                <span class="rounded-full bg-secondary-container px-4 py-1 text-xs font-bold uppercase tracking-widest text-on-secondary-fixed-variant">2013 - Present</span>
-              </div>
-              <ul class="space-y-4 leading-relaxed text-secondary">
-                <li class="flex gap-3"><span class="material-symbols-outlined text-xl text-on-tertiary-container">check_circle</span>11+ years of dedicated service in shaping high-school commerce curriculum.</li>
-                <li class="flex gap-3"><span class="material-symbols-outlined text-xl text-on-tertiary-container">check_circle</span>Appointed as a <strong>CBSE Resource Person</strong> for specialized educator training.</li>
-                <li class="flex gap-3"><span class="material-symbols-outlined text-xl text-on-tertiary-container">check_circle</span>Master of lesson planning, student mentoring, and career counseling for professional streams.</li>
-              </ul>
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="rounded bg-white p-6 shadow-card sm:p-8">
+            <h3 class="text-3xl font-bold leading-tight text-ink">11+ Years of Academic Excellence</h3>
+            <div class="mt-4 flex flex-wrap gap-4 text-base text-muted">
+              <span>Senior Commerce Educator</span>
+              <span>|</span>
+              <span>CBSE Resource Person</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-surface-container-low py-20 md:py-24" id="expertise">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-        <div class="mb-16">
-          <span class="font-label text-sm uppercase tracking-widest text-on-tertiary-container">Subject Matter Focus</span>
-          <h2 class="mt-4 font-headline text-4xl font-bold text-primary">Areas of Expertise</h2>
-        </div>
-        <div class="grid gap-8 md:grid-cols-2">
-          <div class="group rounded-lg bg-surface-container-lowest p-8 transition-all duration-500 hover:bg-primary hover:text-on-primary sm:p-10 md:p-12">
-            <div class="mb-8 flex items-start justify-between">
-              <span class="material-symbols-outlined text-5xl text-on-tertiary-container group-hover:text-tertiary-fixed-dim">business_center</span>
-              <span class="font-headline text-6xl opacity-10 group-hover:opacity-20">01</span>
-            </div>
-            <h3 class="mb-6 font-headline text-3xl font-bold">Business Studies</h3>
-            <div class="flex flex-wrap gap-3">
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Strategic Management</span>
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Modern Marketing</span>
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Financial Systems</span>
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Org. Behavior</span>
-            </div>
-          </div>
-          <div class="group rounded-lg bg-surface-container-lowest p-8 transition-all duration-500 hover:bg-primary hover:text-on-primary sm:p-10 md:p-12">
-            <div class="mb-8 flex items-start justify-between">
-              <span class="material-symbols-outlined text-5xl text-on-tertiary-container group-hover:text-tertiary-fixed-dim">monitoring</span>
-              <span class="font-headline text-6xl opacity-10 group-hover:opacity-20">02</span>
-            </div>
-            <h3 class="mb-6 font-headline text-3xl font-bold">Economics</h3>
-            <div class="flex flex-wrap gap-3">
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Micro/Macro Theory</span>
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Supply &amp; Demand</span>
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">National Income</span>
-              <span class="rounded-full bg-secondary-container px-4 py-2 text-sm group-hover:bg-primary-container">Global Markets</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="overflow-hidden bg-surface py-20 md:py-24" id="education">
-      <div class="mx-auto flex max-w-7xl flex-col gap-14 px-4 sm:px-6 md:flex-row md:gap-20 md:px-8">
-        <div class="md:w-1/3">
-          <div class="sticky top-32">
-            <span class="font-label text-sm uppercase tracking-widest text-on-tertiary-container">Academic Foundation</span>
-            <h2 class="mb-8 mt-4 font-headline text-4xl font-bold text-primary">Evolution of Scholarship</h2>
-            <p class="leading-relaxed text-secondary">A lifelong commitment to learning, from foundational schooling to advanced doctoral research.</p>
-          </div>
-        </div>
-        <div class="space-y-12 md:w-2/3">
-          <div class="group flex flex-col gap-3 sm:flex-row sm:gap-8">
-            <div class="pt-1 sm:w-24 sm:flex-shrink-0 sm:text-right">
-              <span class="font-headline text-xl font-bold text-on-tertiary-container">2013</span>
-            </div>
-            <div class="flex-grow rounded-lg bg-surface-container-low p-8 transition-transform hover:-translate-y-1">
-              <h4 class="mb-2 font-headline text-xl font-bold text-primary">Ph.D. in Commerce</h4>
-              <p class="text-secondary">Bundelkhand University, Jhansi</p>
-            </div>
-          </div>
-          <div class="group flex flex-col gap-3 sm:flex-row sm:gap-8">
-            <div class="pt-1 sm:w-24 sm:flex-shrink-0 sm:text-right">
-              <span class="font-headline text-xl font-bold text-on-tertiary-container">2005</span>
-            </div>
-            <div class="flex-grow rounded-lg bg-surface-container-low p-8 transition-transform hover:-translate-y-1">
-              <h4 class="mb-2 font-headline text-xl font-bold text-primary">M.Com (71%)</h4>
-              <p class="text-secondary">Bundelkhand University, Jhansi</p>
-            </div>
-          </div>
-          <div class="group flex flex-col gap-3 sm:flex-row sm:gap-8">
-            <div class="pt-1 sm:w-24 sm:flex-shrink-0 sm:text-right">
-              <span class="font-headline text-xl font-bold text-on-tertiary-container">2003</span>
-            </div>
-            <div class="flex-grow rounded-lg bg-surface-container-low p-8 transition-transform hover:-translate-y-1">
-              <h4 class="mb-2 font-headline text-xl font-bold text-primary">B.Com (69%)</h4>
-              <p class="text-secondary">B.K.D. College, Jhansi</p>
-            </div>
-          </div>
-          <div class="group flex flex-col gap-3 sm:flex-row sm:gap-8">
-            <div class="pt-1 sm:w-24 sm:flex-shrink-0 sm:text-right">
-              <span class="font-headline text-xl font-bold text-on-tertiary-container">2000</span>
-            </div>
-            <div class="flex-grow rounded-lg bg-surface-container-low p-8 transition-transform hover:-translate-y-1">
-              <h4 class="mb-2 font-headline text-xl font-bold text-primary">CBSE (75%)</h4>
-              <p class="text-secondary">Kendriya Vidyalaya, Jhansi</p>
-            </div>
-          </div>
-          <div class="group flex flex-col gap-3 sm:flex-row sm:gap-8">
-            <div class="pt-1 sm:w-24 sm:flex-shrink-0 sm:text-right">
-              <span class="font-headline text-xl font-bold text-on-tertiary-container">1998</span>
-            </div>
-            <div class="flex-grow rounded-lg bg-surface-container-low p-8 transition-transform hover:-translate-y-1">
-              <h4 class="mb-2 font-headline text-xl font-bold text-primary"> ICSE</h4>
-              <p class="text-secondary">St. Francis' Convent, Jhansi</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-surface-container-low py-20 md:py-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-        <div class="grid items-center gap-20 md:grid-cols-2">
-          <div>
-            <span class="font-label text-sm uppercase tracking-widest text-on-tertiary-container">Competencies</span>
-            <h2 class="mb-10 mt-4 font-headline text-4xl font-bold text-primary">Technical Mastery &amp; Global Dialogue</h2>
-            <div class="space-y-8">
-              <div>
-                <h4 class="mb-4 font-label text-xs uppercase tracking-widest text-secondary">Digital Literacy</h4>
-                <div class="grid gap-4 sm:grid-cols-2">
-                  <div class="flex items-center gap-3 rounded-md bg-surface-container-lowest p-4">
-                    <span class="material-symbols-outlined text-on-tertiary-container">table_chart</span>
-                    <span class="font-medium">MS Excel</span>
-                  </div>
-                  <div class="flex items-center gap-3 rounded-md bg-surface-container-lowest p-4">
-                    <span class="material-symbols-outlined text-on-tertiary-container">description</span>
-                    <span class="font-medium">MS Word</span>
-                  </div>
-                  <div class="flex items-center gap-3 rounded-md bg-surface-container-lowest p-4">
-                    <span class="material-symbols-outlined text-on-tertiary-container">present_to_all</span>
-                    <span class="font-medium">PowerPoint</span>
-                  </div>
-                  <div class="flex items-center gap-3 rounded-md bg-surface-container-lowest p-4">
-                    <span class="material-symbols-outlined text-on-tertiary-container">language</span>
-                    <span class="font-medium">Online Pedagogy</span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4 class="mb-4 font-label text-xs uppercase tracking-widest text-secondary">Language Fluency</h4>
-                <div class="flex gap-4">
-                  <span class="rounded-full border border-outline-variant/30 px-6 py-2 font-medium">English</span>
-                  <span class="rounded-full border border-outline-variant/30 px-6 py-2 font-medium">Hindi</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="rounded-lg bg-primary p-12 text-on-primary academic-gradient">
-            <span class="material-symbols-outlined mb-6 text-5xl text-tertiary-fixed-dim">public</span>
-            <h3 class="mb-6 font-headline text-2xl font-bold">Conference Presence</h3>
-            <p class="mb-8 text-lg leading-relaxed opacity-80">
-              Actively engaged in national and international academic discourse, including notable participation in the STEM Conference, Patna, focused on the intersection of technology and education.
+            <p class="mt-6 text-lg leading-8 text-muted">
+              Dedicated to strengthening fundamentals, improving confidence, and helping students connect classroom learning with real-world understanding.
             </p>
-            <div class="border-t border-on-primary-container pt-8">
-              <div class="flex items-center justify-between">
-                <div>
-                  <p class="text-sm uppercase tracking-widest opacity-60">Latest Recognition</p>
-                  <p class="font-bold">National Educator Award Finalist</p>
-                </div>
-                <span class="material-symbols-outlined">verified</span>
-              </div>
+          </article>
+          <article class="rounded bg-white p-6 shadow-card sm:p-8">
+            <h3 class="text-3xl font-bold leading-tight text-ink">Concept Clarity with Practical Learning</h3>
+            <div class="mt-4 flex flex-wrap gap-4 text-base text-muted">
+              <span>Business Studies</span>
+              <span>|</span>
+              <span>Economics</span>
             </div>
-          </div>
+            <p class="mt-6 text-lg leading-8 text-muted">
+              My teaching style focuses on clear explanations, relatable examples, and a step-by-step approach that supports both weak learners and high achievers.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="bg-surface py-20 md:py-24" id="contact">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-        <div class="flex flex-col overflow-hidden rounded-xl bg-surface-container-lowest shadow-2xl md:flex-row">
-          <div class="academic-gradient p-8 text-on-primary sm:p-10 md:w-1/2 md:p-20">
-            <h2 class="mb-8 font-headline text-4xl font-bold">Get in Touch</h2>
-            <p class="mb-12 text-lg opacity-80">I am open to remote teaching opportunities, subject matter expert roles, and academic collaborations.</p>
-            <div class="space-y-8">
-              <div class="flex items-center gap-6">
-                <span class="material-symbols-outlined rounded-full bg-primary-container p-4 text-tertiary-fixed-dim">call</span>
-                <div>
-                  <p class="text-xs uppercase tracking-widest opacity-60">Call</p>
-                  <p class="text-lg font-medium">+91-8574791692</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-6">
-                <span class="material-symbols-outlined rounded-full bg-primary-container p-4 text-tertiary-fixed-dim">mail</span>
-                <div>
-                  <p class="text-xs uppercase tracking-widest opacity-60">Email</p>
-                  <p class="text-lg font-medium">swetagarwal10@gmail.com</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-6">
-                <span class="material-symbols-outlined rounded-full bg-primary-container p-4 text-tertiary-fixed-dim">location_on</span>
-                <div>
-                  <p class="text-xs uppercase tracking-widest opacity-60">Location</p>
-                  <p class="text-lg font-medium">Jhansi, Uttar Pradesh, India</p>
-                </div>
-              </div>
-            </div>
+    <section class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16" id="experience">
+      <h2 class="mb-10 text-3xl font-bold text-ink">Featured work</h2>
+      <div class="space-y-8">
+        <article class="grid gap-6 border-b border-line pb-8 md:grid-cols-[220px_1fr]">
+          <div class="flex min-h-[170px] items-center justify-center rounded bg-[#edf1ff]">
+            <span class="material-symbols-outlined text-7xl text-chip">school</span>
           </div>
-          <div class="flex items-center p-8 sm:p-10 md:w-1/2 md:p-20">
-            <div class="w-full rounded-xl bg-surface-container-low p-7 sm:p-10">
-              <p class="mb-3 text-sm uppercase tracking-[0.3em] text-on-tertiary-container">Direct Contact</p>
-              <h3 class="mb-6 font-headline text-3xl font-bold text-primary">Available for teaching, speaking, and academic collaborations.</h3>
-              <p class="mb-8 text-lg leading-relaxed text-secondary">
-                For subject matter expert roles, remote teaching opportunities, workshops, and institutional collaborations, please connect directly via phone or email.
-              </p>
-              <div class="space-y-4 text-secondary">
-                <p><span class="font-semibold text-primary">Phone:</span> +91-8574791692</p>
-                <p><span class="font-semibold text-primary">Email:</span> swetagarwal10@gmail.com</p>
-                <p><span class="font-semibold text-primary">Based in:</span> Jhansi, Uttar Pradesh, India</p>
-              </div>
+          <div>
+            <h3 class="text-4xl font-bold text-ink">Senior Commerce Educator</h3>
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-lg">
+              <span class="rounded-full bg-chip px-4 py-1 text-sm font-bold text-white">2013-Present</span>
+              <span class="text-muted">Brij Kunwar Devi Aldrich Public School</span>
+            </div>
+            <p class="mt-6 text-lg leading-8 text-muted">
+              Teaching Business Studies and Economics with a calm, structured, and result-oriented approach while supporting student growth through mentoring, lesson planning, and career guidance.
+            </p>
+          </div>
+        </article>
+
+        <article class="grid gap-6 border-b border-line pb-8 md:grid-cols-[220px_1fr]">
+          <div class="flex min-h-[170px] items-center justify-center rounded bg-[#fff1ec]">
+            <span class="material-symbols-outlined text-7xl text-coral">workspace_premium</span>
+          </div>
+          <div>
+            <h3 class="text-4xl font-bold text-ink">CBSE Resource Person</h3>
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-lg">
+              <span class="rounded-full bg-chip px-4 py-1 text-sm font-bold text-white">Academic Leadership</span>
+              <span class="text-muted">Training and Educator Support</span>
+            </div>
+            <p class="mt-6 text-lg leading-8 text-muted">
+              Contributing to teacher development through academic support, subject guidance, and instructional best practices that improve classroom effectiveness and student outcomes.
+            </p>
+          </div>
+        </article>
+
+        <article class="grid gap-6 border-b border-line pb-8 md:grid-cols-[220px_1fr]">
+          <div class="flex min-h-[170px] items-center justify-center rounded bg-[#f8f2ff]">
+            <span class="material-symbols-outlined text-7xl text-[#7055b7]">auto_stories</span>
+          </div>
+          <div>
+            <h3 class="text-4xl font-bold text-ink">Academic Foundation</h3>
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-lg">
+              <span class="rounded-full bg-chip px-4 py-1 text-sm font-bold text-white">1998-2013</span>
+              <span class="text-muted">ICSE, CBSE, B.Com, M.Com, Ph.D.</span>
+            </div>
+            <p class="mt-6 text-lg leading-8 text-muted">
+              A strong educational journey from St. Francis' Convent and Kendriya Vidyalaya to Bundelkhand University, culminating in a Ph.D. in Commerce and a lifelong dedication to education.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-mist">
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16">
+        <h2 class="mb-8 text-3xl font-bold text-ink">Core strengths</h2>
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="rounded bg-white p-6 shadow-card sm:p-8">
+            <h3 class="text-2xl font-bold text-ink">Subject expertise</h3>
+            <p class="mt-4 text-lg leading-8 text-muted">
+              Business Studies, Economics, strategic management, marketing, financial systems, and board-oriented preparation rooted in clear conceptual teaching.
+            </p>
+          </article>
+          <article class="rounded bg-white p-6 shadow-card sm:p-8">
+            <h3 class="text-2xl font-bold text-ink">Teaching style</h3>
+            <p class="mt-4 text-lg leading-8 text-muted">
+              Student-friendly, disciplined, and practical, with real-life examples, digital readiness, and a consistent focus on confidence-building and academic improvement.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16" id="contact">
+      <h2 class="mb-8 text-3xl font-bold text-ink">Contact</h2>
+      <div class="grid gap-5 md:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded bg-white p-8 shadow-card sm:p-10">
+          <h3 class="text-4xl font-bold leading-tight text-ink">Open to teaching opportunities, collaborations, and subject matter expert roles.</h3>
+          <p class="mt-6 text-lg leading-8 text-muted">
+            I would be glad to connect with schools, edtech teams, and academic organizations looking for an experienced educator with a strong foundation in commerce teaching and learner development.
+          </p>
+        </div>
+        <div class="rounded bg-white p-8 shadow-card sm:p-10">
+          <div class="space-y-6">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-muted">Call</p>
+              <p class="mt-2 text-2xl font-bold text-ink">+91-8574791692</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-muted">Email</p>
+              <p class="mt-2 break-all text-2xl font-bold text-ink">swetagarwal10@gmail.com</p>
+            </div>
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-muted">Location</p>
+              <p class="mt-2 text-2xl font-bold text-ink">Jhansi, Uttar Pradesh, India</p>
             </div>
           </div>
         </div>
@@ -405,14 +208,20 @@
     </section>
   </main>
 
-  <footer class="w-full bg-[#f5f4ed] px-4 py-10 sm:px-6 md:px-8 md:py-12">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-center text-sm uppercase tracking-wide md:flex-row md:gap-6 md:text-left">
-      <div class="font-noto-serif text-lg font-bold italic normal-case text-[#000e27]">Dr. Sweta Agarwal</div>
-      <div class="flex flex-wrap justify-center gap-6">
-        <a class="text-[#464742] decoration-[#a88642] decoration-2 underline-offset-4 transition-colors hover:text-[#000e27] hover:underline" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-        <a class="text-[#464742] decoration-[#a88642] decoration-2 underline-offset-4 transition-colors hover:text-[#000e27] hover:underline" href="#">Academic Archive</a>
+  <footer class="px-5 py-12 sm:px-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center">
+      <div class="flex items-center gap-5 text-ink">
+        <a class="rounded-full border border-line p-3 transition hover:border-coral hover:text-coral" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined">public</span>
+        </a>
+        <a class="rounded-full border border-line p-3 transition hover:border-coral hover:text-coral" href="mailto:swetagarwal10@gmail.com">
+          <span class="material-symbols-outlined">mail</span>
+        </a>
+        <a class="rounded-full border border-line p-3 transition hover:border-coral hover:text-coral" href="tel:+918574791692">
+          <span class="material-symbols-outlined">call</span>
+        </a>
       </div>
-      <div class="text-[#464742]">© 2026 Dr. Sweta Agarwal. All rights reserved.</div>
+      <p class="text-base text-muted">Copyright © 2026 All rights reserved</p>
     </div>
   </footer>
 </body>
