@@ -5,26 +5,24 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Dr. Sweta Agarwal | Academic Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ["Heebo", "sans-serif"],
-            serif: ["Merriweather", "serif"]
+            sans: ["Sora", "sans-serif"]
           },
           colors: {
-            ink: "#1f2748",
-            coral: "#ff6b63",
-            mist: "#edf7fa",
-            muted: "#5f6785",
-            line: "#e3e8f2",
-            chip: "#1f3a77"
+            ink: "#000000",
+            muted: "#71717a",
+            line: "#d4d4d8",
+            soft: "#f4f4f5",
+            card: "#f8fafc"
           },
           boxShadow: {
-            card: "0 18px 35px rgba(24, 38, 70, 0.08)"
+            panel: "0 10px 30px rgba(24, 39, 75, 0.08)"
           }
         }
       }
@@ -34,194 +32,339 @@
     .material-symbols-outlined {
       font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
     }
+
+    .stroke-text {
+      -webkit-text-stroke: 1px #000;
+      color: transparent;
+    }
   </style>
 </head>
-<body class="bg-white font-sans text-ink selection:bg-coral selection:text-white">
-  <header class="border-b border-white/60">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-6 sm:px-8">
-      <a class="font-serif text-2xl font-bold text-ink" href="#top">Sweta.</a>
-      <div class="hidden items-center gap-10 text-lg font-medium text-ink md:flex">
-        <a class="transition hover:text-coral" href="#highlights">Highlights</a>
-        <a class="transition hover:text-coral" href="#experience">Experience</a>
-        <a class="transition hover:text-coral" href="#contact">Contact</a>
+<body class="bg-white font-sans text-ink selection:bg-black selection:text-white">
+  <header class="border-b border-transparent">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
+      <a class="text-xl font-bold tracking-[-0.4px]" href="#top">Personal</a>
+      <div class="hidden items-center gap-8 text-sm font-semibold md:flex">
+        <a class="transition hover:text-muted" href="#about">About Me</a>
+        <a class="transition hover:text-muted" href="#skills">Skills</a>
+        <a class="transition hover:text-muted" href="#projects">Project</a>
+        <a class="transition hover:text-muted" href="#contact">Contact Me</a>
       </div>
-      <button class="flex items-center justify-center md:hidden" type="button" aria-label="Menu">
-        <span class="material-symbols-outlined text-4xl text-ink">menu</span>
+      <a class="hidden rounded bg-black px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#27272a] md:inline-flex" href="./resume.pdf" download>Resume</a>
+      <button class="md:hidden" type="button" aria-label="Menu">
+        <span class="material-symbols-outlined text-3xl">menu</span>
       </button>
     </nav>
   </header>
 
   <main id="top">
-    <section class="mx-auto grid max-w-6xl items-center gap-14 px-5 py-14 sm:px-8 md:grid-cols-[1.1fr_0.9fr] md:py-24">
-      <div class="order-2 md:order-1">
-        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-muted">Commerce Educator</p>
-        <h1 class="max-w-2xl text-4xl font-extrabold leading-tight text-ink sm:text-5xl md:text-6xl">
-          Hi, I am Dr. Sweta, helping students build strong academic foundations.
-        </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">
-          With 11+ years of teaching experience, I specialize in Business Studies and Economics, making learning simple, structured, and meaningful through concept clarity, practical examples, and student-centered guidance.
-        </p>
-        <div class="mt-9 flex flex-wrap gap-4">
-          <a class="rounded bg-coral px-7 py-4 text-lg font-bold text-white transition hover:bg-[#ff5b53]" href="./resume.pdf" download>Download Resume</a>
-          <a class="rounded border border-line px-7 py-4 text-lg font-bold text-ink transition hover:border-coral hover:text-coral" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-      <div class="order-1 flex justify-center md:order-2">
-        <div class="flex h-[230px] w-[230px] items-center justify-center rounded-full bg-mist sm:h-[300px] sm:w-[300px]">
-          <img alt="Dr. Sweta Agarwal portrait" class="h-[200px] w-[200px] rounded-full object-cover sm:h-[260px] sm:w-[260px]" src="./1000115996-ezremove.png" />
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-mist" id="highlights">
-      <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16">
-        <div class="mb-8 flex items-center justify-between gap-4">
-          <h2 class="text-3xl font-bold text-ink">Recent highlights</h2>
-          <a class="text-base font-medium text-[#1da1d6] hover:underline" href="#experience">View all</a>
-        </div>
-        <div class="grid gap-5 md:grid-cols-2">
-          <article class="rounded bg-white p-6 shadow-card sm:p-8">
-            <h3 class="text-3xl font-bold leading-tight text-ink">11+ Years of Academic Excellence</h3>
-            <div class="mt-4 flex flex-wrap gap-4 text-base text-muted">
-              <span>Senior Commerce Educator</span>
-              <span>|</span>
-              <span>CBSE Resource Person</span>
+    <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 md:py-14 lg:px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-[1fr_520px]">
+        <div class="order-2 lg:order-1">
+          <div class="space-y-2 text-[32px] font-extrabold leading-tight tracking-[-0.96px] text-black sm:text-[42px] md:text-[56px]">
+            <div class="flex flex-wrap items-end gap-x-3">
+              <span class="font-normal">Hello I’am</span>
+              <span>Dr. Sweta Agarwal.</span>
             </div>
-            <p class="mt-6 text-lg leading-8 text-muted">
-              Dedicated to strengthening fundamentals, improving confidence, and helping students connect classroom learning with real-world understanding.
-            </p>
-          </article>
-          <article class="rounded bg-white p-6 shadow-card sm:p-8">
-            <h3 class="text-3xl font-bold leading-tight text-ink">Concept Clarity with Practical Learning</h3>
-            <div class="mt-4 flex flex-wrap gap-4 text-base text-muted">
-              <span>Business Studies</span>
-              <span>|</span>
-              <span>Economics</span>
+            <div class="flex flex-wrap items-end gap-x-3">
+              <span>Commerce</span>
+              <span class="stroke-text">Educator</span>
             </div>
-            <p class="mt-6 text-lg leading-8 text-muted">
-              My teaching style focuses on clear explanations, relatable examples, and a step-by-step approach that supports both weak learners and high achievers.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16" id="experience">
-      <h2 class="mb-10 text-3xl font-bold text-ink">Featured work</h2>
-      <div class="space-y-8">
-        <article class="grid gap-6 border-b border-line pb-8 md:grid-cols-[220px_1fr]">
-          <div class="flex min-h-[170px] items-center justify-center rounded bg-[#edf1ff]">
-            <span class="material-symbols-outlined text-7xl text-chip">school</span>
-          </div>
-          <div>
-            <h3 class="text-4xl font-bold text-ink">Senior Commerce Educator</h3>
-            <div class="mt-4 flex flex-wrap items-center gap-4 text-lg">
-              <span class="rounded-full bg-chip px-4 py-1 text-sm font-bold text-white">2013-Present</span>
-              <span class="text-muted">Brij Kunwar Devi Aldrich Public School</span>
+            <div class="flex flex-wrap items-end gap-x-3">
+              <span class="font-normal">Based In</span>
+              <span>Jhansi.</span>
             </div>
-            <p class="mt-6 text-lg leading-8 text-muted">
-              Teaching Business Studies and Economics with a calm, structured, and result-oriented approach while supporting student growth through mentoring, lesson planning, and career guidance.
-            </p>
           </div>
-        </article>
-
-        <article class="grid gap-6 border-b border-line pb-8 md:grid-cols-[220px_1fr]">
-          <div class="flex min-h-[170px] items-center justify-center rounded bg-[#fff1ec]">
-            <span class="material-symbols-outlined text-7xl text-coral">workspace_premium</span>
-          </div>
-          <div>
-            <h3 class="text-4xl font-bold text-ink">CBSE Resource Person</h3>
-            <div class="mt-4 flex flex-wrap items-center gap-4 text-lg">
-              <span class="rounded-full bg-chip px-4 py-1 text-sm font-bold text-white">Academic Leadership</span>
-              <span class="text-muted">Training and Educator Support</span>
-            </div>
-            <p class="mt-6 text-lg leading-8 text-muted">
-              Contributing to teacher development through academic support, subject guidance, and instructional best practices that improve classroom effectiveness and student outcomes.
-            </p>
-          </div>
-        </article>
-
-        <article class="grid gap-6 border-b border-line pb-8 md:grid-cols-[220px_1fr]">
-          <div class="flex min-h-[170px] items-center justify-center rounded bg-[#f8f2ff]">
-            <span class="material-symbols-outlined text-7xl text-[#7055b7]">auto_stories</span>
-          </div>
-          <div>
-            <h3 class="text-4xl font-bold text-ink">Academic Foundation</h3>
-            <div class="mt-4 flex flex-wrap items-center gap-4 text-lg">
-              <span class="rounded-full bg-chip px-4 py-1 text-sm font-bold text-white">1998-2013</span>
-              <span class="text-muted">ICSE, CBSE, B.Com, M.Com, Ph.D.</span>
-            </div>
-            <p class="mt-6 text-lg leading-8 text-muted">
-              A strong educational journey from St. Francis' Convent and Kendriya Vidyalaya to Bundelkhand University, culminating in a Ph.D. in Commerce and a lifelong dedication to education.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="bg-mist">
-      <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16">
-        <h2 class="mb-8 text-3xl font-bold text-ink">Core strengths</h2>
-        <div class="grid gap-5 md:grid-cols-2">
-          <article class="rounded bg-white p-6 shadow-card sm:p-8">
-            <h3 class="text-2xl font-bold text-ink">Subject expertise</h3>
-            <p class="mt-4 text-lg leading-8 text-muted">
-              Business Studies, Economics, strategic management, marketing, financial systems, and board-oriented preparation rooted in clear conceptual teaching.
-            </p>
-          </article>
-          <article class="rounded bg-white p-6 shadow-card sm:p-8">
-            <h3 class="text-2xl font-bold text-ink">Teaching style</h3>
-            <p class="mt-4 text-lg leading-8 text-muted">
-              Student-friendly, disciplined, and practical, with real-life examples, digital readiness, and a consistent focus on confidence-building and academic improvement.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="mx-auto max-w-6xl px-5 py-14 sm:px-8 md:py-16" id="contact">
-      <h2 class="mb-8 text-3xl font-bold text-ink">Contact</h2>
-      <div class="grid gap-5 md:grid-cols-[1.1fr_0.9fr]">
-        <div class="rounded bg-white p-8 shadow-card sm:p-10">
-          <h3 class="text-4xl font-bold leading-tight text-ink">Open to teaching opportunities, collaborations, and subject matter expert roles.</h3>
-          <p class="mt-6 text-lg leading-8 text-muted">
-            I would be glad to connect with schools, edtech teams, and academic organizations looking for an experienced educator with a strong foundation in commerce teaching and learner development.
+          <p class="mt-8 max-w-2xl text-sm leading-7 tracking-[0.32px] text-muted sm:text-base">
+            I’m Dr. Sweta Agarwal, a dedicated Commerce Educator with 11+ years of experience in Business Studies and Economics. I focus on concept clarity, structured teaching, and practical understanding so students can build strong academic foundations and real confidence in learning.
           </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black bg-black text-white transition hover:bg-white hover:text-black" href="mailto:swetagarwal10@gmail.com" aria-label="Email">
+              <span class="material-symbols-outlined">mail</span>
+            </a>
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black transition hover:bg-black hover:text-white" href="tel:+918574791692" aria-label="Call">
+              <span class="material-symbols-outlined">call</span>
+            </a>
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black transition hover:bg-black hover:text-white" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black transition hover:bg-black hover:text-white" href="./resume.pdf" download aria-label="Download Resume">
+              <span class="material-symbols-outlined">download</span>
+            </a>
+          </div>
         </div>
-        <div class="rounded bg-white p-8 shadow-card sm:p-10">
-          <div class="space-y-6">
-            <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-muted">Call</p>
-              <p class="mt-2 text-2xl font-bold text-ink">+91-8574791692</p>
+        <div class="order-1 lg:order-2">
+          <div class="relative mx-auto flex max-w-[520px] items-end justify-center rounded-[24px] border-2 border-black bg-[#f7f7f7] px-8 pt-10">
+            <img alt="Dr. Sweta Agarwal portrait" class="h-auto w-full max-w-[360px] object-contain grayscale-[10%]" src="./1000115996-ezremove.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8" id="skills">
+      <div class="mb-10 flex items-center justify-center gap-4 text-[28px] font-extrabold tracking-[-0.96px] sm:text-[42px]">
+        <span class="font-normal">My</span>
+        <span>Skills</span>
+      </div>
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">school</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Business Studies</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black bg-black px-4 text-center text-white">
+          <span class="material-symbols-outlined text-5xl">monitoring</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Economics</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">co_present</span>
+          <p class="text-base font-bold tracking-[-0.32px]">CBSE Training</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">devices</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Online Pedagogy</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">table_chart</span>
+          <p class="text-base font-bold tracking-[-0.32px]">MS Office Tools</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">groups</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Student Mentoring</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">calendar_month</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Lesson Planning</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">translate</span>
+          <p class="text-base font-bold tracking-[-0.32px]">English & Hindi</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">workspace_premium</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Academic Leadership</p>
+        </div>
+        <div class="flex min-h-[150px] flex-col items-center justify-center gap-5 rounded border-2 border-black px-4 text-center">
+          <span class="material-symbols-outlined text-5xl">theater_comedy</span>
+          <p class="text-base font-bold tracking-[-0.32px]">Kathak Discipline</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black py-10 text-white sm:py-14" id="experience">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 flex items-center justify-center gap-4 text-[28px] font-extrabold tracking-[-0.96px] sm:text-[42px]">
+          <span class="font-normal">My</span>
+          <span>Experience</span>
+        </div>
+        <div class="space-y-6">
+          <article class="rounded-[10px] border border-[#71717a] px-6 py-7 transition hover:bg-white hover:text-black">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-3xl">school</span>
+                <h3 class="text-lg font-semibold tracking-[-0.32px] sm:text-2xl">Senior Commerce Educator at Brij Kunwar Devi Aldrich Public School</h3>
+              </div>
+              <p class="text-sm text-[#d4d4d8] md:text-base">2013 - Present</p>
             </div>
-            <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-muted">Email</p>
-              <p class="mt-2 break-all text-2xl font-bold text-ink">swetagarwal10@gmail.com</p>
+            <p class="mt-6 text-sm leading-7 tracking-[0.32px] text-[#d4d4d8] md:text-base">
+              Delivering structured instruction in Business Studies and Economics while mentoring students, planning lessons, supporting career awareness, and improving board-level academic performance through clarity-driven teaching.
+            </p>
+          </article>
+          <article class="rounded-[10px] border border-[#71717a] px-6 py-7 transition hover:bg-white hover:text-black">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+                <h3 class="text-lg font-semibold tracking-[-0.32px] sm:text-2xl">CBSE Resource Person</h3>
+              </div>
+              <p class="text-sm text-[#d4d4d8] md:text-base">Professional Role</p>
             </div>
-            <div>
-              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-muted">Location</p>
-              <p class="mt-2 text-2xl font-bold text-ink">Jhansi, Uttar Pradesh, India</p>
+            <p class="mt-6 text-sm leading-7 tracking-[0.32px] text-[#d4d4d8] md:text-base">
+              Supporting educator development through subject expertise, practical classroom strategies, and training-oriented academic contribution aligned with modern learning needs.
+            </p>
+          </article>
+          <article class="rounded-[10px] border border-[#71717a] px-6 py-7 transition hover:bg-white hover:text-black">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div class="flex items-center gap-4">
+                <span class="material-symbols-outlined text-3xl">public</span>
+                <h3 class="text-lg font-semibold tracking-[-0.32px] sm:text-2xl">Conference Participation and Academic Outreach</h3>
+              </div>
+              <p class="text-sm text-[#d4d4d8] md:text-base">Ongoing</p>
             </div>
+            <p class="mt-6 text-sm leading-7 tracking-[0.32px] text-[#d4d4d8] md:text-base">
+              Engaged in academic discourse and educational events, including STEM-focused conferences, with an emphasis on the intersection of technology, pedagogy, and student growth.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8" id="about">
+      <div class="grid items-center gap-10 lg:grid-cols-[420px_1fr]">
+        <div class="rounded-[20px] border-2 border-black bg-soft p-6 shadow-panel">
+          <div class="overflow-hidden rounded-[14px] border-2 border-black bg-white">
+            <img alt="Dr. Sweta Agarwal portrait illustration block" class="h-full w-full object-cover" src="./1000115996-ezremove.png" />
+          </div>
+        </div>
+        <div>
+          <div class="mb-8 flex items-center gap-4 text-[28px] font-extrabold tracking-[-0.96px] sm:text-[42px]">
+            <span class="font-normal">About</span>
+            <span>Me</span>
+          </div>
+          <div class="space-y-6 text-sm leading-7 tracking-[0.32px] text-muted sm:text-base">
+            <p>
+              I’m a passionate educator specializing in Commerce, with a strong academic foundation that includes a Ph.D. in Commerce, M.Com, and B.Com. My teaching philosophy is centered on clarity, discipline, and helping students understand concepts in a way that feels practical and empowering.
+            </p>
+            <p>
+              Over the years, I have focused on making Business Studies and Economics approachable for learners by connecting theory with real classroom application. My work has involved not only regular teaching but also mentoring, lesson design, and academic guidance for students preparing for key school milestones.
+            </p>
+            <p>
+              Beyond academics, my Kathak training has shaped the rhythm, patience, and expression I bring into my teaching practice. I value learning environments that are structured, encouraging, and deeply human.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black py-10 text-white sm:py-14" id="projects">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 flex items-center justify-center gap-4 text-[28px] font-extrabold tracking-[-0.96px] sm:text-[42px]">
+          <span class="font-normal">My</span>
+          <span>Projects</span>
+        </div>
+        <div class="space-y-10">
+          <article class="grid gap-8 lg:grid-cols-[520px_1fr] lg:items-center">
+            <div class="rounded-[18px] bg-white/10 p-4">
+              <div class="flex min-h-[320px] items-center justify-center rounded-[14px] bg-[#fef3f2]">
+                <span class="material-symbols-outlined text-[96px] text-black">menu_book</span>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <p class="text-5xl font-extrabold tracking-[-0.96px]">01</p>
+              <h3 class="text-3xl font-bold tracking-[-0.64px]">Curriculum-Focused Classroom Teaching</h3>
+              <p class="text-sm leading-7 tracking-[0.32px] text-[#a1a1aa] sm:text-base">
+                Designing and delivering structured Commerce lessons that strengthen conceptual understanding, improve exam readiness, and make academic content easier for students to retain and apply.
+              </p>
+            </div>
+          </article>
+          <article class="grid gap-8 lg:grid-cols-[1fr_520px] lg:items-center">
+            <div class="order-2 space-y-6 lg:order-1">
+              <p class="text-5xl font-extrabold tracking-[-0.96px]">02</p>
+              <h3 class="text-3xl font-bold tracking-[-0.64px]">Teacher Training and Resource Support</h3>
+              <p class="text-sm leading-7 tracking-[0.32px] text-[#a1a1aa] sm:text-base">
+                As a CBSE Resource Person, contributing to academic quality through training-oriented insight, instructional support, and practical classroom strategies that strengthen educator performance.
+              </p>
+            </div>
+            <div class="order-1 rounded-[18px] bg-white/10 p-4 lg:order-2">
+              <div class="flex min-h-[320px] items-center justify-center rounded-[14px] bg-[#eef2ff]">
+                <span class="material-symbols-outlined text-[96px] text-black">groups_3</span>
+              </div>
+            </div>
+          </article>
+          <article class="grid gap-8 lg:grid-cols-[520px_1fr] lg:items-center">
+            <div class="rounded-[18px] bg-white/10 p-4">
+              <div class="flex min-h-[320px] items-center justify-center rounded-[14px] bg-[#faf5ff]">
+                <span class="material-symbols-outlined text-[96px] text-black">auto_stories</span>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <p class="text-5xl font-extrabold tracking-[-0.96px]">03</p>
+              <h3 class="text-3xl font-bold tracking-[-0.64px]">Academic Guidance and Student Mentoring</h3>
+              <p class="text-sm leading-7 tracking-[0.32px] text-[#a1a1aa] sm:text-base">
+                Supporting learners beyond textbooks through mentoring, confidence-building, and steady guidance that helps students navigate school, exams, and future academic decisions.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <div class="mb-10 flex items-center justify-center gap-4 text-[28px] font-extrabold tracking-[-0.96px] sm:text-[42px]">
+        <span class="font-normal">My</span>
+        <span>Testimonial</span>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-3">
+        <article class="rounded-[20px] bg-white p-8 text-center shadow-panel">
+          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-soft">
+            <span class="material-symbols-outlined text-4xl">workspace_premium</span>
+          </div>
+          <p class="mt-6 text-sm leading-7 tracking-[0.32px] text-muted">
+            Recognized for sustained commitment to concept-based teaching, classroom discipline, and student-centered academic development.
+          </p>
+          <div class="mx-auto mt-6 h-[2px] w-28 bg-black"></div>
+          <p class="mt-6 text-xl font-semibold">Academic Recognition</p>
+          <p class="mt-2 text-sm text-muted">Teaching Excellence</p>
+        </article>
+        <article class="rounded-[20px] bg-black p-8 text-center text-white shadow-panel">
+          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white/10">
+            <span class="material-symbols-outlined text-4xl">verified</span>
+          </div>
+          <p class="mt-6 text-sm leading-7 tracking-[0.32px] text-white/80">
+            Built a reputation for clear teaching, strong subject command, and the ability to support students across different learning levels with patience and structure.
+          </p>
+          <div class="mx-auto mt-6 h-[2px] w-28 bg-white"></div>
+          <p class="mt-6 text-xl font-semibold">Professional Trust</p>
+          <p class="mt-2 text-sm text-white/80">Student and School Impact</p>
+        </article>
+        <article class="rounded-[20px] bg-white p-8 text-center shadow-panel">
+          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-soft">
+            <span class="material-symbols-outlined text-4xl">diversity_3</span>
+          </div>
+          <p class="mt-6 text-sm leading-7 tracking-[0.32px] text-muted">
+            Valued for balancing academic rigor with empathy, helping learners feel supported while steadily improving their understanding and performance.
+          </p>
+          <div class="mx-auto mt-6 h-[2px] w-28 bg-black"></div>
+          <p class="mt-6 text-xl font-semibold">Learner-Centered Approach</p>
+          <p class="mt-2 text-sm text-muted">Confidence and Growth</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8" id="contact">
+      <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div class="space-y-5">
+          <a class="inline-flex rounded bg-black px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#27272a]" href="./resume.pdf" download>Get In Touch</a>
+          <div class="flex flex-wrap gap-4">
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black bg-black text-white transition hover:bg-white hover:text-black" href="mailto:swetagarwal10@gmail.com" aria-label="Email">
+              <span class="material-symbols-outlined">mail</span>
+            </a>
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black transition hover:bg-black hover:text-white" href="tel:+918574791692" aria-label="Call">
+              <span class="material-symbols-outlined">call</span>
+            </a>
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black transition hover:bg-black hover:text-white" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
+              <span class="material-symbols-outlined">public</span>
+            </a>
+            <a class="flex h-14 w-14 items-center justify-center rounded border-2 border-black transition hover:bg-black hover:text-white" href="./resume.pdf" download aria-label="Download Resume">
+              <span class="material-symbols-outlined">download</span>
+            </a>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="space-y-2 text-[28px] font-extrabold leading-tight tracking-[-0.96px] sm:text-[42px]">
+            <div class="flex flex-wrap items-end gap-x-3">
+              <span>Let’s</span>
+              <span class="stroke-text">talk</span>
+              <span>for</span>
+            </div>
+            <div>Something special</div>
+          </div>
+          <p class="max-w-xl text-sm leading-7 tracking-[0.32px] text-muted sm:text-base">
+            I’m open to school teaching roles, academic collaborations, curriculum support, educator training, and subject matter expert opportunities where I can contribute experience, discipline, and clarity-driven teaching.
+          </p>
+          <div class="space-y-3 text-2xl font-semibold tracking-[-0.56px]">
+            <p class="break-all">swetagarwal10@gmail.com</p>
+            <p>+91-8574791692</p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="px-5 py-12 sm:px-8">
-    <div class="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center">
-      <div class="flex items-center gap-5 text-ink">
-        <a class="rounded-full border border-line p-3 transition hover:border-coral hover:text-coral" href="https://www.linkedin.com/in/dr-sweta-agarwal-593bb61b5/" rel="noopener noreferrer" target="_blank">
-          <span class="material-symbols-outlined">public</span>
-        </a>
-        <a class="rounded-full border border-line p-3 transition hover:border-coral hover:text-coral" href="mailto:swetagarwal10@gmail.com">
-          <span class="material-symbols-outlined">mail</span>
-        </a>
-        <a class="rounded-full border border-line p-3 transition hover:border-coral hover:text-coral" href="tel:+918574791692">
-          <span class="material-symbols-outlined">call</span>
-        </a>
+  <footer class="bg-black">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-white sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+      <p class="font-bold">Personal</p>
+      <div class="text-right text-xs sm:text-sm">
+        <p>@ 2026 Personal</p>
+        <p>Made with care for Dr. Sweta Agarwal</p>
       </div>
-      <p class="text-base text-muted">Copyright © 2026 All rights reserved</p>
     </div>
   </footer>
 </body>
